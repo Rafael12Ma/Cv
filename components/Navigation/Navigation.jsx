@@ -8,12 +8,12 @@ export default function Navigation() {
         xs:text-[0.5rem] 
         sm:text-[0.7rem]
         md-text[1rem]
-        lg:text-[1.3rem]
-        xl:text-[1.7rem]
-        2xl:text-[2rem]
-        3xl:text-[2.3rem]
+        lg:text-[1.15rem]
+        xl:text-[1.5rem]
+        2xl:text-[1.8rem]
+        3xl:text-[2.rem]
       border-purple-700 border-2 
-        font-semibold rounded-2xl gap-10"
+        font-semibold font-mono rounded-2xl gap-10"
       >
         <Link href="/contact">Contact</Link>
         <Link href="/projects">Projects</Link>

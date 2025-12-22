@@ -8,7 +8,7 @@ export default function Home() {
         <div className="min-h-12 text-3xl font-mono">
           <TypedReact />
         </div>
-        <Link href="/home">
+        <Link href="/about">
           <button className="bg-purple-700 hover:bg-purple-600 p-3 rounded-2xl text-xl text-white cursor-pointer animate-pulse active:animate-ping ">
             Get started
           </button>

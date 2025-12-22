@@ -18,7 +18,7 @@ export default function Navigation() {
         <Link href="/contact">Contact</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/about">About</Link>
-        <div className="gap-5 flex text-[1rem] justify-center items-center ">
+        <div className="gap-3 flex text-[1rem] justify-center items-center ">
           <button className="bg-amber-50 rounded-md h-7 w-10 font-bold cursor-pointer text-black">
             Dark
           </button>

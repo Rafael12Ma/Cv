@@ -17,7 +17,7 @@ export default function Navigation() {
       >
         <Link href="/contact">Contact</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/about">About me</Link>
+        <Link href="/about">About</Link>
         <button>EN</button>
         <button>Dark</button>
       </nav>

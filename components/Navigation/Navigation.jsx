@@ -4,7 +4,7 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className="flex justify-center p-10 md:text-[10px] sm:text-[10px]  border-purple-700 border-2 text-xl 
+        className="flex justify-center p-10 xl:text-xl md:text-md sm:text-sm  border-purple-700 border-2 text-xl 
         font-semibold rounded-2xl gap-10"
       >
         <Link href="/contact">Contact</Link>

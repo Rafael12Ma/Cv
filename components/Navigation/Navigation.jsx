@@ -5,10 +5,10 @@ export default function Navigation() {
     <>
       <nav
         className="flex justify-center p-10 
-        xs:text-[0.6rem] 
-        sm:text-[0.8rem]
-        md-text[1.1rem]
-        lg:text-[1.4rem]
+        xs:text-[0.5rem] 
+        sm:text-[0.7rem]
+        md-text[1rem]
+        lg:text-[1.3rem]
         xl:text-[1.7rem]
         2xl:text-[2rem]
         3xl:text-[2.3rem]

@@ -1,9 +1,12 @@
 "use client";
 
+import { useLangStore, useThemeStore } from "@/storeZustand/theme";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+  const { theme, changeTheme } = useThemeStore();
+  const { lang, changeLang } = useLangStore();
   const path = usePathname();
   return (
     <>
@@ -27,10 +30,22 @@ export default function Navigation() {
           About
         </Link>
         <div className="gap-3 flex text-[1rem] justify-center items-center ">
-          <button className="bg-amber-50 rounded-md h-7 w-10 font-bold cursor-pointer text-black">
-            Dark
+          <button
+            onClick={changeTheme}
+            className="bg-amber-50 rounded-md h-7 w-11 font-bold cursor-pointer text-black"
+          >
+            {theme}
           </button>
-          <button className="text-red-600 cursor-pointer">EN</button>
+          <button
+            onClick={changeLang}
+            className={
+              lang === "GR"
+                ? "text-blue-600 cursor-pointer"
+                : "text-red-600 cursor-pointer"
+            }
+          >
+            {lang}
+          </button>
         </div>
       </nav>
     </>

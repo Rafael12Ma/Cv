@@ -7,7 +7,7 @@ export default function Navigation() {
   const path = usePathname();
   return (
     <>
-      <nav className="flex justify-center p-10 text-[clamp(0.3rem,1.5vw,2rem)] border-purple-700 border-2 font-semibold font-mono rounded-2xl gap-8">
+      <nav className="flex justify-center p-10 text-[clamp(0.8rem,1.5vw,2rem)] border-purple-700 border-2 font-semibold font-mono rounded-2xl gap-8">
         <Link
           className={path === "/contact" ? "text-purple-500" : undefined}
           href="/contact"

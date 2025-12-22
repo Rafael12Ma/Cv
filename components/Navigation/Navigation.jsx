@@ -32,7 +32,7 @@ export default function Navigation() {
         <div className="gap-3 flex text-[1rem] justify-center items-center ">
           <button
             onClick={changeTheme}
-            className="bg-amber-50 rounded-md h-7 w-11 font-bold cursor-pointer text-black"
+            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-pointer text-black"
           >
             {theme}
           </button>

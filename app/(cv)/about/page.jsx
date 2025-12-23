@@ -14,17 +14,17 @@ export default function HomePage() {
             <Image width={100} src={logo} alt="A photo of me!" />
           </div>
           <div className="border w-100 text-xl p-10">
-            <h1 className="text-purple-700 font-semibold">About me</h1>
+            <h1 className="text-purple-600 font-semibold">About me</h1>
             <p className="font-serif text-lg">
-              Name is Rafael. I'm from Greece and I live in Kavala. I'm 23 years
-              old and i study Computer Science in Democritus University of
-              Thrace (DUTH). In my spare time I usually go fishing or coding.
+              I am a 23-year-old Computer Science graduate from Democritus
+              University of Thrace, based in Kavala, Greece. I have a strong
+              interest in software development and enjoy coding in my free time.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center p-5 gap-20">
-          <h1 className="text-purple-700 font-semibold text-2xl">
+          <h1 className="text-purple-600 font-semibold text-2xl">
             Certifications
           </h1>
           <ul className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10  text-left">

@@ -19,12 +19,12 @@ export default function NotFound() {
             not found
           </p>
         </div>
-        <div>
-          <h1 className="font-mono font-bold text-xl text-left text-purple-500 ">
+        <div className="flex flex-col justify-between mx-10 ">
+          <h1 className="font-mono  font-bold text-xl   text-purple-500 ">
             Maybe you have had more than{" "}
-            <span className="animate-bounce">one</span> beers.
+            <span className="animate-bounce">one</span> beer.
           </h1>
-          <h2 className="opacity-40 font-mono text-[0.5rem]">
+          <h2 className="opacity-40 font-mono  text-[0.5rem]">
             Try radler instead!
           </h2>
         </div>

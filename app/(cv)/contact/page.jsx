@@ -13,17 +13,17 @@ export default function ContactPage() {
         </div>
         <div className="bg-blue-400 w-100 flex flex-col mx-auto justify-center">
           <div className=" flex justify-evenly p-3 ">
-            <Link>
+            <Link href="/a">
               {" "}
               <RxLinkedinLogo />
             </Link>
-            <Link>
+            <Link href="/a">
               <FaFacebookSquare />
             </Link>
-            <Link>
+            <Link href="/a">
               <FaGithub />
             </Link>
-            <Link>
+            <Link href="/a">
               <MdEmail />
             </Link>
           </div>

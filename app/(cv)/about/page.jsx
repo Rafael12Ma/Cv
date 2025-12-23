@@ -40,7 +40,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-
           <h1 className="text-purple-700 font-semibold text-2xl">Languages</h1>
           {lang.length > 0 ? (
             <ul className="flex flex-col justify-center gap-10">
@@ -57,7 +56,6 @@ export default function HomePage() {
           ) : (
             <p>No extra languages except greek.</p>
           )}
-
           <hr />
         </div>
       </main>

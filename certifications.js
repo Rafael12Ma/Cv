@@ -11,7 +11,7 @@ export const certifications = [
 
 
 export const languages = [
-    { title: "Greek", level: "Mother language" },
+    { title: "Greek", level: "Native language" },
     { title: "English", level: "B2" },
     { title: "German", level: "B1" },
 ]

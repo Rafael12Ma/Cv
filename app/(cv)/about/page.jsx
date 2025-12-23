@@ -1,7 +1,9 @@
+import { certifications } from "@/certifications";
 import logo from "@/public/images/st.png";
 import Image from "next/image";
 
 export default function HomePage() {
+  const cert = certifications;
   return (
     <>
       <main className="flex flex-col items-center gap-10 my-20">
@@ -17,8 +19,22 @@ export default function HomePage() {
             (DUTH). In my spare time I usually go fishing or coding.
           </p>
         </div>
-        <div>
-          <h1>Certifications</h1>
+        <div className="flex flex-col justify-center items-center p-20 gap-10">
+          <h1 className="text-purple-700 font-semibold text-2xl">
+            Certifications
+          </h1>
+          <ul className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-4 gap-20 text-left">
+            {cert.map((certif) => (
+              <li
+                key={certif.title}
+                className="border-purple-600 p-2 border-y "
+              >
+                <h1 className="text-[1.4rem]">{certif.title}</h1>
+                <p className="opacity-40 text-[0.8rem]">{certif.instructor}</p>
+                <p>{certif.from}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </main>
     </>

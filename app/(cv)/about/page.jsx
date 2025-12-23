@@ -9,13 +9,16 @@ export default function HomePage() {
           <h1 className="font-sans">Rafael Maroufidis</h1>
           <Image width={100} src={logo} alt="A photo of me!" />
         </div>
-        <div className="border w-150 text-xl p-10">
+        <div className="border w-100 text-xl p-10">
           <h1 className="text-purple-700 font-semibold">About me</h1>
           <p className="font-serif text-lg">
             Name is Rafael. I'm from Greece and I live in Kavala. I'm 23 years
             old and i study Computer Science in Democritus University of Thrace
             (DUTH). In my spare time I usually go fishing or coding.
           </p>
+        </div>
+        <div>
+          <h1>Certifications</h1>
         </div>
       </main>
     </>

@@ -12,6 +12,7 @@ export default function HomePage() {
           <div className="bg-purple-800 rounded-t-3xl p-10 gap-5 justify-center m-auto  flex flex-col items-center h-1vhw">
             <h1 className="font-sans">Rafael Maroufidis</h1>
             <Image width={100} src={logo} alt="A photo of me!" />
+            <p className="text-green-500 font-semibold">Open to work </p>
           </div>
           <div className="border w-100 text-xl p-10">
             <h1 className="text-purple-600 font-semibold">About me</h1>

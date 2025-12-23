@@ -8,3 +8,9 @@ export const certifications = [
     { title: "Responsive Web Design", instructor: "Quincy Larson", from: "FreeCodeCamp" },
 
 ]
+
+
+export const languages = [
+    { title: "English", level: "B2" },
+    { title: "German", level: "B1" }
+]

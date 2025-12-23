@@ -14,18 +14,31 @@ export default function ContactPage() {
           </h1>
         </div>
         <div className="bg-purple-500 rounded-b-2xl lg:w-150 md:w-120 sm:w-80 flex flex-col mx-auto justify-center">
-          <div className=" flex justify-evenly p-3 text-2xl ">
-            <Link href="https://www.linkedin.com/in/rafail-maroufidis-79a905298/">
+          <div className=" flex justify-evenly p-3 text-3xl ">
+            <Link
+              className="transition-transform duration-200 hover:scale-150"
+              href="https://www.linkedin.com/in/rafail-maroufidis-79a905298/"
+            >
               {" "}
               <RxLinkedinLogo color="blue" />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=100026189599848">
+            <Link
+              className="transition-transform duration-200 hover:scale-150"
+              href="https://www.facebook.com/profile.php?id=100026189599848"
+            >
               <FaFacebookSquare color="blue" />
             </Link>
-            <Link href="https://github.com/Rafael12Ma">
+            <Link
+              className="transition-transform duration-200 hover:scale-150"
+              href="https://github.com/Rafael12Ma"
+            >
               <FaGithub color="black" />
             </Link>
-            <Link href="mailto:rafaelmaroufidis@yahoo.com">
+
+            <Link
+              className="transition-transform duration-200 hover:scale-150"
+              href="mailto:rafaelmaroufidis@yahoo.com"
+            >
               <MdEmail color="black" />
             </Link>
           </div>

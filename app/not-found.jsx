@@ -20,7 +20,7 @@ export default function NotFound() {
           </p>
         </div>
         <div>
-          <h1 className="font-mono font-bold text-xl text-center text-purple-500 ">
+          <h1 className="font-mono font-bold text-xl text-left text-purple-500 ">
             Maybe you have had more than{" "}
             <span className="animate-bounce">one</span> beers.
           </h1>

@@ -4,13 +4,19 @@ import logo from "./error.jpg";
 export default function ErrorPage() {
   return (
     <>
-      <div className="flex flex-col justify-center gap-10 items-center my-40">
+      <div className="flex flex-col justify-center gap-10 items-center my-30">
         <h1 className="animate-bounce text-5xl font-mono font-semibold">
           ERROR 404
         </h1>
-        <h1 className="font-mono font-bold text-xl text-purple-500 ">
-          Maybe you had more than one beers.
-        </h1>
+
+        <div>
+          <h1 className="font-mono font-bold text-xl text-purple-500 ">
+            Maybe you had more than one beers.
+          </h1>
+          <h2 className="opacity-40 font-mono text-[0.5rem]">
+            Try radler instead!
+          </h2>
+        </div>
         <img
           width={700}
           src={logo.src}

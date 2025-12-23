@@ -8,23 +8,23 @@ export default function ContactPage() {
   return (
     <>
       <div className="border-purple-950 border-2 m-10">
-        <div className="bg-purple-500 sm:w-80 flex flex-col justify-center items-center my-10 rounded-t-2xl mx-auto text-center p-10">
-          <h1 className="font-mono font-semibold">Contact me</h1>
+        <div className="bg-purple-600 lg:w-150 md:w-120 sm:w-80 flex flex-col justify-center items-center my-10 rounded-t-2xl mx-auto text-center p-10">
+          <h1 className="font-mono font-semibold text-2xl">Contact me</h1>
         </div>
-        <div className="bg-blue-400 sm:w-80 flex flex-col mx-auto justify-center">
-          <div className=" flex justify-evenly p-3 ">
-            <Link href="/a">
+        <div className="bg-purple-500 rounded-2xl  sm:w-80 flex flex-col mx-auto justify-center">
+          <div className=" flex justify-evenly p-3 text-2xl ">
+            <Link href="https://www.linkedin.com/in/rafail-maroufidis-79a905298/">
               {" "}
-              <RxLinkedinLogo />
+              <RxLinkedinLogo color="blue" />
             </Link>
-            <Link href="/a">
-              <FaFacebookSquare />
+            <Link href="https://www.facebook.com/profile.php?id=100026189599848">
+              <FaFacebookSquare color="blue" />
             </Link>
-            <Link href="/a">
-              <FaGithub />
+            <Link href="https://github.com/Rafael12Ma">
+              <FaGithub color="black" />
             </Link>
-            <Link href="/a">
-              <MdEmail />
+            <Link href="mailto:rafaelmaroufidis@yahoo.com">
+              <MdEmail color="black" />
             </Link>
           </div>
         </div>

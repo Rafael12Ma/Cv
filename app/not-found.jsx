@@ -1,5 +1,7 @@
 "use client";
 
+import logo from "./error.jpg";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -7,25 +9,37 @@ export default function NotFound() {
   const path = usePathname();
   return (
     <>
-      <main className="w-full gap-7 h-screen flex flex-col justify-center items-center text-2xl">
-        <h1 className="text-purple-900 2xl:text-8xl xl:text-7xl lg:text-4xl md:text-2xl  sm:text-xl">
-          Page not found!
-        </h1>
-        <div className="flex flex-col items-center justify-center">
-          <h1>
-            There is not such correct web url :{" "}
-            <span className="text-purple-500">{path}</span>
+      <div className="flex flex-col justify-center gap-10 items-center my-30">
+        <div>
+          <h1 className="animate-bounce text-5xl font-mono font-semibold">
+            ERROR 404
           </h1>
-          <div className="flex items-center">
-            <h2>Try this one </h2>
-            <Link className="text-purple-500" href="/about">
-              <button className="hover:bg-purple-500 active:animate-spin hover:text-black cursor-pointer p-2 rounded-l-2xl">
-                /about
-              </button>
-            </Link>
-          </div>
+          <p className="text-[0.8rem] text-center">
+            Page <span className="text-purple-400 font-semibold">{path}</span>{" "}
+            not found
+          </p>
         </div>
-      </main>
+        <div>
+          <h1 className="font-mono font-bold text-xl text-purple-500 ">
+            Maybe you have had more than one beers.
+          </h1>
+          <h2 className="opacity-40 font-mono text-[0.5rem]">
+            Try radler instead!
+          </h2>
+        </div>
+        <img
+          width={700}
+          src={logo.src}
+          alt="Error 404 Brian Griffin drunk!"
+          className="rounded-2xl"
+        />
+        <Link
+          href="/about"
+          className="bg-purple-500 font-serif hover:bg-purple-700 hover:animate-pulse  p-2 rounded-2xl"
+        >
+          Go back to site
+        </Link>
+      </div>
     </>
   );
 }

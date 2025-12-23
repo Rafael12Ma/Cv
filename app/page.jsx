@@ -13,7 +13,6 @@ export default function Home() {
             Get started
           </button>
         </Link>
-        version 22/12...21:43
       </div>
     </main>
   );

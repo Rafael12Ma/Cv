@@ -1,10 +1,13 @@
-import { certifications, languages } from "@/certifications";
+// import { certifications, languages } from "@/certifications";
+import Certifications from "@/components/certificates";
+import Languages from "@/components/langs";
 import logo from "@/public/images/st.png";
 import Image from "next/image";
 
 export default function HomePage() {
-  const cert = certifications;
-  const lang = languages;
+  // const cert = certifications;
+  // const lang = languages;
+
   return (
     <>
       <main className="flex flex-col items-center gap-10 my-20">
@@ -23,44 +26,14 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-
         <div className="flex flex-col justify-center items-center p-5 gap-20">
           <h1 className="text-purple-600 font-semibold text-2xl">
             Certifications
           </h1>
-          <ul className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10  text-left">
-            {cert.map((certif) => (
-              <li
-                key={certif.title}
-                className="border-purple-600 p-2 border-y "
-              >
-                <h1 className="text-[1.4rem]">{certif.title}</h1>
-                <div className="flex justify-between items-center">
-                  <p className="opacity-40 text-[0.8rem] italic">
-                    {certif.instructor}
-                  </p>
-                  <p>{certif.from}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <Certifications />
+
           <h1 className="text-purple-700 font-semibold text-2xl">Languages</h1>
-          {lang.length > 0 ? (
-            <ul className="flex flex-col justify-center gap-10">
-              {lang.map((l) => (
-                <li
-                  className="border-purple-700 border-b-2  justify-between flex  gap-10"
-                  key={l.title}
-                >
-                  <p className="">{l.title}</p>
-                  <p>{l.level}</p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No extra languages except greek.</p>
-          )}
-          <hr />
+          <Languages />
         </div>
       </main>
     </>

@@ -1,3 +1,4 @@
+import { QueryProvider } from "@/query-provider/query";
 import "./globals.css";
 
 
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <QueryProvider>
+          {children}
+        </QueryProvider>
       </body>
     </html>
   );

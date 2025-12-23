@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 
 export default function ErrorPage({ error }) {
   return (
@@ -8,6 +7,7 @@ export default function ErrorPage({ error }) {
         <h1 className="animate-bounce text-5xl font-mono font-semibold">
           ERROR 404
         </h1>
+        <p></p>
       </div>
     </>
   );

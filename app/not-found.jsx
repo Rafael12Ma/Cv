@@ -11,7 +11,7 @@ export default function NotFound() {
     <>
       <div className="flex flex-col justify-center gap-10 items-center my-30">
         <div>
-          <h1 className="animate-bounce text-5xl font-mono font-semibold">
+          <h1 className="animate-bounce text-5xl font-mono font-semibold text-purple-950">
             ERROR 404
           </h1>
           <p className="text-[0.8rem] text-center">
@@ -20,8 +20,9 @@ export default function NotFound() {
           </p>
         </div>
         <div>
-          <h1 className="font-mono font-bold text-xl text-purple-500 ">
-            Maybe you have had more than one beers.
+          <h1 className="font-mono font-bold text-xl text-center text-purple-500 ">
+            Maybe you have had more than{" "}
+            <span className="animate-bounce">one</span> beers.
           </h1>
           <h2 className="opacity-40 font-mono text-[0.5rem]">
             Try radler instead!

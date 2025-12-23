@@ -1,9 +1,10 @@
-import { certifications } from "@/certifications";
+import { certifications, languages } from "@/certifications";
 import logo from "@/public/images/st.png";
 import Image from "next/image";
 
 export default function HomePage() {
   const cert = certifications;
+  const lang = languages;
   return (
     <>
       <main className="flex flex-col items-center gap-10 my-20">
@@ -19,7 +20,7 @@ export default function HomePage() {
             (DUTH). In my spare time I usually go fishing or coding.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center p-5 gap-10">
+        <div className="flex flex-col justify-center items-center p-5 gap-20">
           <h1 className="text-purple-700 font-semibold text-2xl">
             Certifications
           </h1>
@@ -31,7 +32,7 @@ export default function HomePage() {
               >
                 <h1 className="text-[1.4rem]">{certif.title}</h1>
                 <div className="flex justify-between items-center">
-                  <p className="opacity-40 text-[0.8rem]">
+                  <p className="opacity-40 text-[0.8rem] italic">
                     {certif.instructor}
                   </p>
                   <p>{certif.from}</p>
@@ -39,6 +40,24 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+
+          <h1 className="text-purple-700 font-semibold text-2xl">Languages</h1>
+          {lang.length > 0 ? (
+            <ul className="flex flex-col justify-center gap-10">
+              {lang.map((l) => (
+                <li
+                  className="border-purple-700 border-b-2  justify-between flex  gap-10"
+                  key={l.title}
+                >
+                  <p className="">{l.title}</p>
+                  <p>{l.level}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No extra languages except greek.</p>
+          )}
+
           <hr />
         </div>
       </main>

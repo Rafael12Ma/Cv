@@ -10,7 +10,7 @@ async function fetchLanguages() {
 
 export default function Languages() {
   const { data, isPending, error, isError } = useQuery({
-    queryKey: ["users"],
+    queryKey: ["languages"],
     queryFn: fetchLanguages,
   });
 

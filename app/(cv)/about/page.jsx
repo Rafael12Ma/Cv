@@ -1,4 +1,5 @@
 // import { certifications, languages } from "@/certifications";
+import AddLang from "@/components/addLanguage";
 import Certifications from "@/components/certificates";
 import Languages from "@/components/langs";
 import logo from "@/public/images/st.png";
@@ -35,6 +36,7 @@ export default function HomePage() {
           <h1 className="text-purple-700 font-semibold text-2xl">Languages</h1>
           <Languages />
         </div>
+        <AddLang />
       </main>
     </>
   );

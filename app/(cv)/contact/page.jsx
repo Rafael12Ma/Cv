@@ -12,6 +12,7 @@ export default function ContactPage() {
           <h1 className="font-mono sm:text-sm md:text-md lg:text-lg xl:text-xl font-semibold ">
             Contact me
           </h1>
+          <p className="opacity-70">via</p>
         </div>
         <div className="bg-purple-500 rounded-b-2xl lg:w-150 md:w-120 sm:w-80 flex flex-col mx-auto justify-center">
           <div className=" flex justify-evenly p-3 text-3xl ">

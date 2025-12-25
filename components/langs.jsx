@@ -34,7 +34,7 @@ export default function Languages() {
           {data.map((l) => (
             <li
               className="border-purple-700 border-b-2  justify-between flex  gap-10"
-              key={l.title}
+              key={l.id}
             >
               <p className="">{l.title}</p>
               <p>{l.level}</p>

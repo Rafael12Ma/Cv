@@ -1,7 +1,7 @@
 const languages = [
-    { title: "Greek", level: "Native language" },
-    { title: "English", level: "B2" },
-    { title: "German", level: "B1" },
+    { id: 1, title: "Greek", level: "Native language" },
+    { id: 2, title: "English", level: "B2" },
+    { id: 3, title: "German", level: "B1" },
 ]
 
 

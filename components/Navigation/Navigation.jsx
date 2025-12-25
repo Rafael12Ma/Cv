@@ -3,6 +3,7 @@
 import { useLangStore, useThemeStore } from "@/storeZustand/theme";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Toaster } from "react-hot-toast";
 
 export default function Navigation() {
   const { theme, changeTheme } = useThemeStore();
@@ -48,6 +49,7 @@ export default function Navigation() {
           </button>
         </div>
       </nav>
+      <Toaster />
     </>
   );
 }

@@ -9,6 +9,8 @@ export default function Navigation() {
   const { theme, changeTheme } = useThemeStore();
   const { lang, changeLang } = useLangStore();
   const path = usePathname();
+  const butDisabled = true;
+
   return (
     <>
       <nav className="flex justify-center items-center p-10 text-[clamp(0.8rem,1.5vw,2rem)] border-purple-700 border-2 font-semibold font-mono rounded-2xl gap-8">
@@ -32,17 +34,19 @@ export default function Navigation() {
         </Link>
         <div className="gap-3 flex text-[1rem] justify-center items-center ">
           <button
+            disabled={butDisabled}
             onClick={changeTheme}
-            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-pointer text-black"
+            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-no-drop text-black"
           >
             {theme}
           </button>
           <button
+            disabled={butDisabled}
             onClick={changeLang}
             className={
               lang === "GR"
-                ? "text-blue-600 cursor-pointer"
-                : "text-red-600 cursor-pointer"
+                ? "text-blue-600 cursor-no-drop"
+                : "text-red-600 cursor-no-drop"
             }
           >
             {lang}

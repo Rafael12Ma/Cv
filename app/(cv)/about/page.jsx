@@ -5,6 +5,11 @@ import Languages from "@/components/langs";
 import logo from "@/public/images/st.png";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About me",
+  description: "This is a page about me",
+};
+
 export default function HomePage() {
   // const cert = certifications;
   // const lang = languages;

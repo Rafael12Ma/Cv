@@ -4,6 +4,12 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "This is the page where users can contact me via LinkedIn, Facebook, Github and personal email.",
+};
+
 export default function ContactPage() {
   return (
     <>

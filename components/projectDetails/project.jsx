@@ -15,7 +15,7 @@ export default function Project({ project }) {
 
   if (isPending) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center">
+      <div className="flex my-40 items-center justify-center">
         <p className="text-purple-400 opacity-40 animate-pulse">
           Loading project...
         </p>

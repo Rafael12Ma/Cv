@@ -17,7 +17,7 @@ export default function Projects() {
 
   if (isPending) {
     return (
-      <p className="text-white opacity-40 animate-pulse text-center my-40">
+      <p className="text-purple-400 opacity-40 animate-pulse text-center my-40">
         Loading projects...
       </p>
     );
@@ -26,7 +26,7 @@ export default function Projects() {
   if (isError) {
     return <p>An error occured while fetching the data...</p>;
   }
-
+  console.log("data=", data);
   return (
     <>
       <ul className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 m-3 place-items-center">

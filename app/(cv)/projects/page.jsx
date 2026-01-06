@@ -8,6 +8,7 @@ export default function ProjectsPage() {
     queryKey: ["projects"],
     queryFn: fetchProjects,
   });
+  console.log("data=", data);
   return (
     <>
       <div className="flex flex-col items-center">

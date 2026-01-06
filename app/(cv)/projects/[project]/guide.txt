@@ -1,0 +1,3 @@
+Για να προσθέσω ένα project το μόνο που έχω να κάνω είναι να πάω στο : C:\Users\rafae\Documents\NextJsProjects\cv\app\(cv)\projects\projects.js 
+και να προσθέσω τα στοιχεία του καινούριου μου project. Επίσης πρέπει να πάω εδώ : C:\Users\rafae\Documents\NextJsProjects\cv\public\images
+και να προσθέσω μια φωτογραφία που να αντικατροπτίζει το project μου.

@@ -6,7 +6,7 @@ import logo from "@/public/images/st.png";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About me",
+  title: "About me | My Portfolio",
   description: "This is a page about me",
 };
 

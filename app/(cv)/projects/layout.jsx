@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Projects",
+  title: "Projects | My Portfolio",
   description: "This is a page where i have uploaded my projects via vercel.",
 };
 

@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact",
+  title: "Contact | My Portfolio",
   description:
     "This is the page where users can contact me via LinkedIn, Facebook, Github and personal email.",
 };
@@ -13,8 +13,8 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <div className="border-purple-950 border-2 m-10 rounded-b-2xl">
-        <div className="bg-purple-600 lg:w-150 md:w-120 sm:w-80 flex flex-col justify-center items-center my-10 rounded-t-2xl mx-auto text-center p-10">
+      <div className="border-purple-950 border-2 m-10 pb-10 rounded-b-2xl ">
+        <div className="bg-purple-600 lg:w-150 md:w-120  sm:w-80 flex flex-col justify-center items-center my-10 rounded-t-2xl mx-auto text-center p-10">
           <h1 className="font-mono sm:text-sm md:text-md lg:text-lg xl:text-xl font-semibold ">
             Contact me
           </h1>

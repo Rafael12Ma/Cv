@@ -4,7 +4,7 @@ export async function generateMetadata({ params }) {
   const { project } = await params;
   const decodedSlug = decodeURIComponent(project);
   return {
-    title: decodedSlug,
+    title: `${decodedSlug} | My Portfolio`,
     description: `My project with title : ${decodedSlug} is a project`,
   };
 }

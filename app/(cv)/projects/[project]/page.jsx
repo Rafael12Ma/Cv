@@ -1,5 +1,14 @@
 import Project from "@/components/projectDetails/project";
 
+export async function generateMetadata({ params }) {
+  const { project } = await params;
+  const decodedSlug = decodeURIComponent(project);
+  return {
+    title: decodedSlug,
+    description: `My project with title : ${decodedSlug} is a project`,
+  };
+}
+
 export default async function DetailPage({ params }) {
   const { project } = await params;
   const decodedSlug = decodeURIComponent(project);

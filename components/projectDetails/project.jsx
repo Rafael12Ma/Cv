@@ -4,14 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchProjects } from "@/components/projectsPage/projects";
 import Link from "next/link";
 
-export async function generateMetadata({ params }) {
-  const { project } = await params;
-  const decodedSlug = decodeURIComponent(project);
-  return {
-    title: decodedSlug,
-    description: `My project with title : ${decodedSlug} is a project`,
-  };
-}
+
 
 export default function Project({ project }) {
   const { data, isPending, isError, error } = useQuery({

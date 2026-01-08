@@ -19,6 +19,6 @@ export const projects = [{
         "TailwindCss",
         "Finhub"
     ],
-    link: "https://stock-calculator-nextjs-liard.vercel.app/",
+    link: "https://stock-calculator-nextjs-z688.vercel.app/",
     image: "/images/StockCalculator.png"
 },]

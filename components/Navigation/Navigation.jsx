@@ -1,12 +1,13 @@
 "use client";
 
 import { useLangStore, useThemeStore } from "@/storeZustand/theme";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
 
 export default function Navigation() {
-  const { theme, changeTheme } = useThemeStore();
+  const { theme, setTheme } = useTheme();
   const { lang, changeLang } = useLangStore();
   const path = usePathname();
   const butDisabled = true;
@@ -34,8 +35,8 @@ export default function Navigation() {
         </Link>
         <div className="gap-3 flex text-[1rem] justify-center items-center ">
           <button
-            disabled={butDisabled}
-            onClick={changeTheme}
+            // disabled={butDisabled}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-no-drop text-black"
           >
             {theme}

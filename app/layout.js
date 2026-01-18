@@ -1,5 +1,6 @@
 import { QueryProvider } from "@/query-provider/query";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 
 export const metadata = {
@@ -9,10 +10,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <QueryProvider>
-          {children}
+          <ThemeProvider attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+
+            {children}
+          </ThemeProvider>
+
         </QueryProvider>
       </body>
     </html>

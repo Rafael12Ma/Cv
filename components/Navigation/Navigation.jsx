@@ -37,7 +37,7 @@ export default function Navigation() {
           <button
             // disabled={butDisabled}
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-no-drop text-black"
+            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-pointer hover:bg-gray-300 text-black"
           >
             {theme}
           </button>

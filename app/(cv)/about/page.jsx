@@ -21,12 +21,12 @@ export default function HomePage() {
           <div className="bg-purple-800 rounded-t-3xl p-10 gap-5 justify-center m-auto  flex flex-col items-center h-1vhw">
             <h1 className="font-serif">Rafael Maroufidis</h1>
             <Image width={100} src={logo} alt="A photo of me!" />
-            <p className="text-green-500 font-semibold">Open to work </p>
+            <p className="text-red-500 font-semibold">Employed</p>
           </div>
           <div className="border w-100 text-xl p-10">
             <h1 className="text-purple-600 font-semibold">About me</h1>
             <p className="font-serif text-lg">
-              I am a 23-year-old Computer Science graduate from Democritus
+              I am a 24-year-old Computer Science graduate from Democritus
               University of Thrace, based in Kavala, Greece. I have a strong
               interest in software development and enjoy coding in my free time.
             </p>
@@ -41,7 +41,7 @@ export default function HomePage() {
           <h1 className="text-purple-700 font-semibold text-2xl">Languages</h1>
           <Languages />
         </div>
-        <AddLang />
+        {/* <AddLang /> */}
       </main>
     </>
   );

@@ -5,16 +5,22 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
-  const { lang, changeLang } = useLangStore();
+  const { themeZ, changeTheme } = useThemeStore();
   const path = usePathname();
   const butDisabled = true;
+  console.log("themez=", themeZ);
+  console.log("theme=", theme);
 
   return (
     <>
-      <nav className="flex justify-center items-center p-10 text-[clamp(0.8rem,1.5vw,2rem)] border-purple-700 border-2 font-semibold font-mono rounded-2xl gap-8">
+      <nav
+        className={`flex justify-center ${theme === "light" && "text-black"} items-center p-10 text-[clamp(0.8rem,1.5vw,2rem)] border-purple-700 border-2 font-semibold font-mono rounded-2xl gap-8`}
+      >
         <Link
           className={path === "/contact" ? "text-purple-500" : undefined}
           href="/contact"
@@ -34,14 +40,19 @@ export default function Navigation() {
           About
         </Link>
         <div className="gap-3 flex text-[1rem] justify-center items-center ">
+          {/* {theme === "dark" && ( */}
           <button
             // disabled={butDisabled}
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="bg-amber-50 rounded-md h-7 w-13 font-bold cursor-pointer hover:bg-gray-300 text-black"
+            onClick={() => {
+              setTheme(theme === "dark" ? "light" : "dark");
+              changeTheme(themeZ);
+            }}
+            className={`rounded-md p-1 text-3xl font-bold cursor-pointer hover:opacity-65 active:scale-125 transition duration-100 ${themeZ === "light" && "text-black"}`}
           >
-            {theme}
+            {theme === "dark" ? <MdDarkMode /> : <MdLightMode />}
           </button>
-          <button
+          {/* )} */}
+          {/* <button
             disabled={butDisabled}
             onClick={changeLang}
             className={
@@ -51,7 +62,7 @@ export default function Navigation() {
             }
           >
             {lang}
-          </button>
+          </button> */}
         </div>
       </nav>
       <Toaster />

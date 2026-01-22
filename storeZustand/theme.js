@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 export const useThemeStore = create((set) => ({
-    theme: "Light",
-    changeTheme: () => set((state) => ({ theme: state.theme === 'Light' ? "Dark" : "Light" }))
+    themeZ: "dark",
+    changeTheme: () => set((state) => ({ themeZ: state.themeZ === 'light' ? "dark" : "light" }))
 }))
 
 

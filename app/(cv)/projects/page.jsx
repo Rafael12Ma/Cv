@@ -1,9 +1,12 @@
 "use client";
 
 import Projects, { fetchProjects } from "@/components/projectsPage/projects";
+import { useThemeStore } from "@/storeZustand/theme";
 import { useQuery } from "@tanstack/react-query";
 
 export default function ProjectsPage() {
+  const { themeZ } = useThemeStore();
+  console.log(themeZ);
   const { data } = useQuery({
     queryKey: ["projects"],
     queryFn: fetchProjects,
@@ -18,7 +21,9 @@ export default function ProjectsPage() {
 
         <h1 className="text-center my-10 mb-20  text-purple-600 font-serif text-xl">
           My deployed projects{" "}
-          <span className="text-white">({data?.length})</span>
+          <span className={themeZ === "light" ? "text-black" : "text-white"}>
+            ({data?.length})
+          </span>
           <hr className="mx-40 text-purple-400 opacity-30" />
         </h1>
         <Projects />

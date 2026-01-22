@@ -3,10 +3,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchProjects } from "@/components/projectsPage/projects";
 import Link from "next/link";
-
-
+import { useThemeStore } from "@/storeZustand/theme";
 
 export default function Project({ project }) {
+  const { themeZ } = useThemeStore();
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["projects"],
     queryFn: fetchProjects,
@@ -52,7 +52,7 @@ export default function Project({ project }) {
             <label className="text-center text-purple-500 font-semibold underline my-2">
               Description
             </label>
-            <h1 className="text-purple-200 text-left">
+            <h1 className="dark:text-purple-300 text-left">
               {selectedProject.description}
             </h1>
           </div>
@@ -62,7 +62,7 @@ export default function Project({ project }) {
             </label>
             <ul className="grid max-md:grid-cols-2 max-md:place-items-center">
               {selectedProject.techs.map((tech) => (
-                <li className="text-purple-200" key={tech}>
+                <li className="text-purple-300" key={tech}>
                   {tech}
                 </li>
               ))}

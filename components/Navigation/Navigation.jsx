@@ -47,7 +47,7 @@ export default function Navigation() {
               setTheme(theme === "dark" ? "light" : "dark");
               changeTheme(themeZ);
             }}
-            className={`rounded-md p-1 text-3xl font-bold cursor-pointer hover:opacity-65 active:scale-125 transition duration-100 ${themeZ === "light" && "text-black"}`}
+            className={`rounded-md p-1 text-3xl font-bold cursor-pointer hover:opacity-65 active:scale-125 transition duration-100 ${theme === "light" && "text-black"}`}
           >
             {theme === "dark" ? <MdDarkMode /> : <MdLightMode />}
           </button>

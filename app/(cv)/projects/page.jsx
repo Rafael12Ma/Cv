@@ -19,7 +19,7 @@ export default function ProjectsPage() {
       </main> */}
 
         <h1 className="text-center my-10 mb-20  text-purple-600 font-serif text-xl">
-          My deployed projects{" "}
+          My deployed projects{" "} 
           <span className={theme === "light" ? "text-black" : undefined}>
             ({data?.length})
           </span>
